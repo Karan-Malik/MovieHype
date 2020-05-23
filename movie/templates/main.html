@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MovieHype:Movie Recommendations</title>
+      <style media="screen">
+        /*#background { background-image: url("moviebackground.jpg"); height:300px; width: 1000px;}*/
+          body{
+
+            color: #E0FFFF;
+          background-image:url('https://getreelcinemas.com/wp-content/uploads/2015/02/Background-Narrow.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%
+        }
+
+
+        h1{
+          position: fixed;
+          font-size: 80px;
+          left:517px;
+          top: 90px;
+          font-family:Impact, Charcoal, sans-serif;
+        }
+
+        form input[type="text"] {
+          padding: 8px;
+          width: 150%;
+          height: 21px;
+          font-weight: bold;
+          border-radius: 15px;
+        }
+
+        a:link{
+          text-decoration: none;
+          }
+        a{color: #E0FFFF;
+        padding-left: 2em;
+      font-size: 17px;
+    font-family: Helvetica;}
+
+
+
+
+        form input[type="submit"] {
+          background-color: red;
+          color: black;
+          width: 8%;
+          height: 30px;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 15px;
+          position: fixed;
+          left: 640px;
+          top:415px;
+
+          }
+
+        .boxed{position:fixed;left:270px;top:450px;}
+
+      </style>
+
+  </head>
+  <body>
+
+
+    <h1>MOVIEHYPE</h1>
+    <img src="http://schools.wrdsb.ca/wlm/files/2015/01/popcorn.png" style="width:80px;height:80px;position: fixed;left:390px;top:150px;">
+    <img src="http://schools.wrdsb.ca/wlm/files/2015/01/popcorn.png" style="width:80px;height:80px;position: fixed;right:390px;top:150px;">
+    <p style="position:fixed;top:250px;left:280px;">Don't know, what to watch next? Relax, we got you. Enter your favourite movie and get similar movie recommedations from <br></p>
+    <p style="position:fixed;top:273px;left:530px;">thousands of users.We'll never let you run out of movies!!</p>
+
+    <form action="" method="post">
+      {{ form.hidden_tag() }}
+      <p style="position:fixed;left:545px;top:330px;">{{ form.moviename(placeholder='Enter Movie Name...')}}</p>
+      <p>{{ form.submit() }}</p>
+
+    </form>
+
+    <div class="boxed">
+
+
+<p>
+    {% with messages=get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+      <a target="_blank" href="http://www.google.com/search?q={{ message}}">{{ message }}</a>
+      {% endfor %}
+
+    {% endif %}
+    {% endwith %}
+</p>
+</div>
+<p style="position: fixed;bottom: 0;left: 610px;font-size: 14px;">Copyright &copy; 2020, Karan Malik</p>
+  </body>
+</html>
