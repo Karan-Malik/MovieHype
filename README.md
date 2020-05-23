@@ -34,17 +34,21 @@ flask run
 4. Enter the url provided after running the previous commands into your web browser
 
 
-The movie recommender is now ready for use!
+### The movie recommender is now ready for use!
 
-Enter the name of a movie and you will receive recommendations of similar movies. Click on the movie recommended to check out its reviews and ratings. 
+Enter the name of a movie and receive recommendations of similar movies. Click on the movie recommended to check out its reviews and ratings. 
 
-Never run out of movies!!
+#### Never run out of movies!!
 
 
 
 ##### To install flask follow this [link](https://flask.palletsprojects.com/en/1.1.x/installation/)
 
 ###### If application does not work after completing the previous steps, run it in a [virtual environment](https://djangocentral.com/how-to-a-create-virtual-environment-for-python/)
+
+
+
+##### Copyright (c) 2020 Karan Malik
 
 
 
