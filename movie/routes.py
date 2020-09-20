@@ -33,7 +33,7 @@ def movierec():
             if x in movies.iloc[i,1]:
                 x=movies.iloc[i,1]
                 flag=1
-
+                
         if flag==-1:
             flash('There was some error. The admin has been notified. Please try another movie. Sorry for the inconvenience!!')
         else:
@@ -51,4 +51,5 @@ def movierec():
             final=final.index
             for i in range(1,5):
                 flash(final[i])
+                
     return render_template('main.html',form=form)
