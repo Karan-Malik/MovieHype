@@ -18,7 +18,7 @@ You can access the dataset [here](https://grouplens.org/datasets/movielens/)
 1. Clone this repository onto your system. On Command Prompt, run the following command:
 
 ```
-git clone https://github.com/Karan-Malik/MovieHype
+git clone https://github.com/Karan-Malik/MovieHype.git
 ```
 2. Change your directory to MovieHype:
 ```
